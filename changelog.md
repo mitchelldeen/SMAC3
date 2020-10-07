@@ -1,3 +1,9 @@
+# 0.12.4
+
+## Hotfix
+
+* Backport bugfix #680: Fix wrong initialization of list in local search
+
 # 0.12.3
 
 ## Minor Changes
