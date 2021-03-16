@@ -156,7 +156,7 @@ class RandomForestWithInstances(BaseModel):
         self.rf = regression.binary_rss_forest()
         self.rf.options = self.rf_opts
         data = self._init_data_container(self.X, self.y)
-        self.rf.fit(data, rng=self.rng)
+        self.rf.fit(data, self.rng)
         return self
 
     def _init_data_container(self, X: np.ndarray, y: np.ndarray) -> regression.default_data_container:
