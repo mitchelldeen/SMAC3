@@ -38,7 +38,7 @@ class SMAC4HPO(SMAC4AC):
 
         scenario = kwargs['scenario']
 
-        if len(scenario.cs.get_hyperparameters()) <= 40:
+        if len(scenario.cs.get_hyperparameters()) <= 400:
             kwargs['initial_design'] = kwargs.get('initial_design', SobolDesign)
         else:
             raise ValueError(
